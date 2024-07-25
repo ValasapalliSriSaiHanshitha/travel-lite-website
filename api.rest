@@ -1,0 +1,33 @@
+GET https://travel-bee-server.onrender.com/users
+
+###
+POST https://travel-bee-server.onrender.com/users
+Content-Type: application/json
+
+{
+    "name":"rahul",
+    "age":24,
+    "password":111
+}
+
+###
+PATCH https://travel-bee-server.onrender.com/users/3
+Content-Type: application/json
+
+{
+    "password":999
+}
+###
+DELETE https://travel-bee-server.onrender.com/users/3
+
+###
+POST https://travel-bee-server.onrender.com/users
+Content-Type: application/json
+
+{
+    "fname":"shyamgopal",
+    "lname":"Biswas",
+    "email":"sgb@gmail.com",
+    "password":"sgb@22114"   
+}
+

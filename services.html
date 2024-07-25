@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/services.css " />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=DM+Serif+Display&family=Dela+Gothic+One&family=Gabarito&family=Jost:wght@600&family=Montserrat&family=Mukta&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300&family=Open+Sans:wght@300;400&family=Outfit&family=Patua+One&family=Pixelify+Sans&family=Playpen+Sans&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Travel Services</title>
+    <script type="module" src="script/services.js "></script>
+    <link rel="stylesheet" href="script/navbar.css " />
+    <link rel="stylesheet" href="style/footer.css " />
+    <style>
+      footer {
+        margin-top: 10%;
+        background-color: aliceblue;
+        padding-top: 0%;
+        padding-bottom: 0%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="aboutnav"></div>
+    <header>
+      <h1>Travel Lite Services</h1>
+    </header>
+
+    <section>
+      <div class="flight-booking">
+        <h2>Flight Bookings</h2>
+        <p>Book your flights with us and enjoy a seamless travel experience.</p>
+        <button id="book-now-btn">Book Now</button>
+        <div id="booking-form-container"></div>
+      </div>
+      <div class="flight-booking">
+        <h2>Travel Packages</h2>
+        <div class="packages">
+          <div class="package">
+            <h3>Premium</h3>
+            <p>Experience luxury at its best.</p>
+            <button
+              class="select-package-btn"
+              onclick="location.href='package.html  ';"
+            >
+              Select Package
+            </button>
+          </div>
+
+          <div class="package">
+            <h3>Deluxe</h3>
+            <p>A perfect blend of comfort and affordability.</p>
+            <button
+              class="select-package-btn"
+              onclick="location.href='package.html ';"
+            >
+              Select Package
+            </button>
+          </div>
+
+          <div class="package">
+            <h3>Super Deluxe</h3>
+            <p>The ultimate travel experience.</p>
+            <button
+              class="select-package-btn"
+              onclick="location.href='package.html ';"
+            >
+              Select Package
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- pop-up -->
+    <div id="bookingModal" class="modal">
+      <div class="modal-content">
+        <span id="close">&times;</span>
+        <p id="bookingDetails"></p>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

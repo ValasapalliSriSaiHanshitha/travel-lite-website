@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Bee</title>
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+  </head>
+
+  <style>
+    /* Popup container */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 50%;
+      background: inherit;
+      filter: blur(5px); /* Adjust the blur amount as needed */
+      z-index: -1;
+    }
+
+    .popup-container {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #dccfcf;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .popup-content img {
+      width: 70%;
+      height: 70%;
+    }
+    #close-btn {
+      cursor: pointer;
+      background-color: rgb(249, 2, 2);
+      color: #dccfcf;
+    }
+  </style>
+
+  <body>
+    <nav class="aboutnav"></nav>
+
+    <section id="head">
+      <img src="./images/wepik-export-20231213110057mS4X.jpeg" alt="image" />
+      <div class="text-data">
+        <div class="text-head">Live your <span>Adventure</span></div>
+        <div>
+          Don't wait till tomorrow, discover your adventure now and feel the
+          sensation of closeness to nature around you
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="popular-destination">
+      <div>FIND <span>POPULAR</span> DESTINATIONS</div>
+      <div id="dest-cards"></div>
+    </section> -->
+
+    <section id="stories">
+      <div>
+        <img src="./images/stories.png" alt="" />
+      </div>
+      <div id="s-text">
+        <div id="s-title">OUR <span>STORIES</span> WITH ADVENTURES</div>
+        <div>
+          We are experienced in bringing adventures to start their journey, all
+          outdoor destinations in the world are our specialities.
+        </div>
+        <div>
+          So don't hesitate to start your adventure right now, nature has
+          already called you!
+        </div>
+        <div id="s-data">
+          <div>
+            <h2>12K+</h2>
+            <p>Success Journey</p>
+          </div>
+          <div>
+            <h2>16+</h2>
+            <p>Award Winning</p>
+          </div>
+          <div>
+            <h2>20+</h2>
+            <p>Years Of Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="adventure">
+      <div>
+        <div id="adv-title">
+          START YOUR NEW <span>ADVENTURE</span> AROUND THE WORLD
+        </div>
+        <div>
+          There are many amazing destinations scatterd aroun dthe world, you
+          should try to visit all of them.
+        </div>
+      </div>
+      <div id="adv-img">
+        <img src="./images/tempsnip.png" alt="" />
+      </div>
+    </section>
+
+    <section id="about-us">
+      <div id="about-text">
+        <div id="about-title">WHAT ADVENTURES SAY <span>ABOUT US</span></div>
+        <div>
+          See and discover what adventures tell us about their journey with us,
+          we always listen to ehatever experiences they have to say.
+        </div>
+        <!-- <div id="about-card">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div> -->
+      </div>
+      <div>
+        <img src="./images/girl.jpeg" alt="" />
+      </div>
+    </section>
+
+    <section id="get-started">
+      <div id="start-text">
+        <div id="start-title">GET STARTED WITH <span>TRAVEL BEE</span></div>
+        <p>
+          Subscribe and find super attractive price quotes from us, we wait for
+          you at best destination
+        </p>
+        <button href="login.html " id="but">LOGIN</button>
+        <a href="login.html">login</a>
+      </div>
+    </section>
+
+    <footer></footer>
+
+    <!-- Popup container -->
+    <div id="popup-container" class="popup-container">
+      <div class="popup-content">
+        <img
+          src="pics/lake-boat.jpg"
+          alt="Advertisement Image"
+          style="max-width: 100%"
+        />
+        <p>🌟 Exclusive Travel Deals Just for You! 🌟</p>
+        <p>
+          ✈️ Explore the breathtaking beaches of Bali! 50% off on your next
+          tropical getaway.
+        </p>
+        <p>
+          🗺️ Embark on a European adventure! Save $200 on any European tour
+          package.
+        </p>
+        <p>
+          🏨 Luxurious stay at our partnered hotels! Book now and get a
+          complimentary spa session.
+        </p>
+        <button id="close-btn">Close</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script type="module" src="./script/index.js"></script>
